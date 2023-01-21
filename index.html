@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="section full-height">
+        <input class="modal-btn" type="checkbox" id="modal-btn" name="modal-btn" />
+        <label for="modal-btn">Open Modal <i class="uil uil-expand-arrows"></i></label>
+        <div class="modal">
+            <div class="modal-wrap">
+                <h3 style="text-align: center; border-bottom: 1px solid gray; padding-bottom: 5px;">Size Guide</h3>
+                <!-- Measurement Section -->
+                <ul class="measurement-style">
+                    <li class="measure active-measure" onclick="displayInch(event)">INCH</li>
+                    <li class="measure" onclick="displayCm(event)">CM</li>
+                </ul>
+
+                <!-- Category Section -->
+                <div class="selection-container">
+                    <ul class="category-style">
+                        <li class="category active-category" onclick="displayUnisex(event)">UNISEX</li>
+                        <li class="category" onclick="displayWomens(event)">WOMENS</li>
+                        <li class="category" onclick="displayHoodies(event)">HOODIES</li>
+                    </ul>
+                    <p class="demo-picture" id="demo-picture-container"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==================== OLD CODES ======================-->
+    <!-- <label class="btn" for="my-modal-3">Size Guide</label> -->
+
+    <!-- Modal -->
+    <!-- <input type="checkbox" id="my-modal-3" class="modal-toggle" /> -->
+    <!-- <div class="modal">
+        <div class="modal-box relative">
+            <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+            <ul class="list-none mt-5 text-center border grid grid-cols-2">
+                <li class="measure active a" onclick="displayInch(event)">inch</li>
+                <li class="measure a" onclick="displayCm(event)">cm</li>
+            </ul>
+            <ul class="list-none mt-2 text-center border grid grid-cols-4">
+                <li class="category active a" onclick="displayUnisex(event)">UNISEX</li>
+                <li class="category a" onclick="displayWomens(event)">WOMENS</li>
+                <li class="category a" onclick="displayHoodies(event)">HOODIES</li>
+                <li class="category a" onclick="displayYouth(event)">YOUTH</li>
+            </ul>
+            <p class="mt-4" id="demo-picture-container"></p>
+        </div>
+    </div> -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
